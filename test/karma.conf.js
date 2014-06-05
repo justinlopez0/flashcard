@@ -15,7 +15,9 @@ module.exports = function(config) {
     frameworks: ['jasmine'],
 
     // list of files / patterns to load in the browser
-    files: [],
+    files: [
+        'test/spec/**/*.js'
+    ],
 
     // list of files / patterns to exclude
     exclude: [],
@@ -32,7 +34,7 @@ module.exports = function(config) {
     // - PhantomJS
     // - IE (only Windows)
     browsers: [
-      'PhantomJS'
+      'chrome'
     ],
 
     // Which plugins to enable
@@ -43,7 +45,7 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, it capture browsers, run tests and exit
-    singleRun: false
+    singleRun: false,
 
     colors: true,
 
